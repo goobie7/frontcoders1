@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>FrontCoders - programming company</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,7 +15,7 @@
 				<span>
 					<small>Menu</small>
 					<svg class="main_menu_icon" style="width:28px; height:28px" viewBox="0 0 24 24">
-							<path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+	    				<path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
 					</svg>
 				</span>
 			</button>
@@ -26,16 +26,29 @@
 							<h1>Nowoczesne, użyteczne strony internetowe</h1>
 						</div>
 					</div>
-					<a href="#"><img src="img/mouse.svg" /></a>
+					<a href="#"><img src="assets/mouse.svg" /></a>
 				</div>
 			</section>
+			<nav id="main_navigtion" role="naviagtion" class="main_navigation">
+				<ul>
+					<li>Portfolio</li>
+					<li>Usługi</li>
+					<li>O nas</li>
+					<li>Kontakt</li>
+				</ul>
+				<button class="main_navigation-close-btn">
+					<svg viewBox="0 0 24 24">
+    					<path fill="#4ea1d3" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+					</svg>
+				</button>
+			</nav>
 		</header>
 		<section id="features" class="features">
 			<div class="row">
 				<div class="feature box col-4">
 					<div class="feature_content">
 						<span class="feature_icon">
-							<img src="img/cog.png">
+							<img src="assets/cog.png">
 						</span>
 						<h2 class="feature_title">
 							Nowoczesne technologie
@@ -48,7 +61,7 @@
 				<div class="feature box col-4">
 					<div class="feature_content">
 						<span class="feature_icon">
-							<img src="img/paint-palette.png">
+							<img src="assets/paint-palette.png">
 						</span>
 						<h2 class="feature_title">
 							Nowoczesny design
@@ -61,7 +74,7 @@
 				<div class="feature box col-4">
 					<div class="feature_content">
 						<span class="feature_icon">
-							<img src="img/user-chat.png">
+							<img src="assets/user-chat.png">
 						</span>
 						<h2 class="feature_title">
 							Kontakt z klientem.
@@ -70,30 +83,125 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
 						</p>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</section>
 		<section id="works" class="works">
 			<div class="row">
-				<div class="col-6"></div>
+				<h2 class="works_headline">Nasze prace</h2>
+				<div class="col-6 no_padding">
 					<div class="work_content">
 						<div class="work_image">
-
+							<img src="images/portfolio-item3.jpg" alt="" />
 						</div>
 						<div class="work_intro">
-
+							
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-6 no_padding">
 					<div class="work_content">
 						<div class="work_image">
-
+							<img src="images/portfolio-item.jpeg" alt="" />
 						</div>
 						<div class="work_intro">
-
+							
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="services">
+			<div class="row">
+				<h2 class="services_headline">
+					Nasze usługi
+				</h2>
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							Projektowanie stron internetowych
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							UI / UX Design
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							Fotografia
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							Copywriting
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							Wordpress CMS
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+				<div class="service box col-4">
+					<div class="service_content">
+						<span class="service_icon">
+							<img src="assets/paint-palette.png">
+						</span>
+						<h2 class="service_title">
+							Google Adwords
+						</h2>
+						<p class="service_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dolor sodales mauris egestas hendrerit et non leo. In auctor porttitor tincidunt.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="get_contact" class="get_contact">
+			<div class="row">
+				<div class="get_contact-content">
+					<button class="get_contact-btn">Zacznij projekt</button>
 				</div>
 			</div>
 		</section>
@@ -102,48 +210,18 @@
 					<a href="#" class="logo">
 						Road
 					</a>
-						<ul class="main-nav active">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Work</a></li>
-								<li><a href="#about_us">About Us</a></li>
-								<li><a href="#team_members">Contact</a></li>
-								<li><a href="#">Blog</a></li>
-						</ul>
-						<a class="toggle-nav" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
-					</div>
+			    	<ul class="main-nav active">
+				        <li><a href="#">Home</a></li>
+				        <li><a href="#">Work</a></li>
+				        <li><a href="#about_us">About Us</a></li>
+				        <li><a href="#team_members">Contact</a></li>
+				        <li><a href="#">Blog</a></li>
+			    	</ul>
+			    	<a class="toggle-nav" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			    </div>
 			</nav> -->
 
-
-      <section id="peoples" class="peoples">
-  			<div class="row">
-          <div class="col-6 bg_blue no_padding">
-            <img src="img/lukas.jpg" class="img_responsive">
-            <button class="people_button">Kontakt</button>
-          </div>
-          <div class="col-6 bg_mint no_padding">
-            <img src="img/adam.jpg" class="img_responsive">
-            <button class="people_button">Kontakt</button>
-          </div>
-  			<div class="row">
-          <div class="col-6 bg_blue">
-            <div class="people text_center">
-              <h2>Łukasz</h2>
-              <h3>FrontEnd Developer</h3>
-              <h3>programista HTML/JS/Ajax</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <button>Contact Me</button>
-            </div>
-          </div>
-          <div class="col-6 people bg_mint text_center">
-            <div class="people text_center">
-              <h2>Adam</h2>
-              <h3>FrontEnd Developer</h3>
-              <h3>programista HTML/JS/Ajax</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <button>Contact Me</button>
-            </div>
-          </div>
-        </div>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>

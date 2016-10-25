@@ -1,0 +1,32 @@
+body { font-family: "Lato", sans-serif; font-size: 14px;}
+h1, h2, h3, h4, h5 { margin: 5px 0px; }
+p { margin: 10px 0px; line-height: 1.7;}
+
+.bg_pink { background-color: pink; }
+.bg_mint { background-color: rgb(168, 231, 142); }
+.bg_blue { background-color: rgb(88, 195, 209) }
+.img_responsive { width: 100%; }
+.text_center { text-align: center; }
+.people { padding: 70px 150px; }
+.people p { padding: 10px 120px; text-align: justify; background-color:;}
+.people h2 { position: relative; padding-bottom: 5px; margin-bottom: 20px;}
+.people h2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	right: 0px;
+	width: 70px;
+	height: 3px;
+	background-color: pink;
+	margin: auto;
+}
+.people_button {
+	position: absolute;
+	bottom: 50px;
+	left:0;
+	right: 0;
+	margin: auto;
+	width: 70px;
+}

@@ -136,6 +136,7 @@ header {
     width: 50%;
     height: 100vh;
     background: #000;
+		opacity: 0.95;
     right: 0px;
     z-index: 1001;
     display: table;
@@ -272,7 +273,7 @@ p.feature_text, p.service_text {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 50px;	
+	bottom: 50px;
 	width: 60px;
 	height: 2px;
 	margin: auto;

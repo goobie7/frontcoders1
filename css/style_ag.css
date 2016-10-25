@@ -1,5 +1,4 @@
 body { font-family: "Lato", sans-serif; font-size: 14px;}
-h1, h2, h3, h4, h5 { margin: 5px 0px; }
 p { margin: 10px 0px; line-height: 1.7;}
 
 .bg_pink { background-color: pink; }
@@ -8,6 +7,7 @@ p { margin: 10px 0px; line-height: 1.7;}
 .img_responsive { width: 100%; }
 .text_center { text-align: center; }
 .people { padding: 70px 150px; }
+.people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; }
 .people p { padding: 10px 120px; text-align: justify; background-color:;}
 .people h2 { position: relative; padding-bottom: 5px; margin-bottom: 20px;}
 .people h2::after {

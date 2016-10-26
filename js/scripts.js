@@ -20,7 +20,13 @@
 
 		$(function(){
 	        $(".text_typed").typed({
-	            strings: ["nowoczesne strony www", "projekty graficzne"],
+	            strings: [
+								"nowoczesne strony www",
+								"projekty graficzne",
+								"szablony Wordpress",
+								"fotografie",
+								"dobry klimat <br> współpracy ;)"
+							],
 	            typeSpeed: 100,
 	            loop: true,
 	            startDelay: 1000,

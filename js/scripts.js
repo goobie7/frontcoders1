@@ -13,7 +13,20 @@
 
 		$navCloseBtn.on('click', function(){
 			$body.removeClass('nav-visible');
-		})
+		});
+
+
+		// Script resposible for typing effect on site
+
+		$(function(){
+	        $(".text_typed").typed({
+	            strings: ["nowoczesne strony www", "projekty graficzne"],
+	            typeSpeed: 100,
+	            loop: true,
+	            startDelay: 1000,
+	        });
+    	});
+
 	});
 
 

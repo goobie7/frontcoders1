@@ -76,7 +76,6 @@ img {
 .col-20 {width: 20%;}
 .col-40 {width: 40%;}
 
-
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -113,6 +112,7 @@ header {
 	height: 100vh;
 	width: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .main_brand_logo {
@@ -168,7 +168,6 @@ header {
     width: 50%;
     height: 100vh;
     background: #000;
-		opacity: 0.95;
     right: 0px;
     z-index: 1001;
     display: table;
@@ -176,6 +175,7 @@ header {
     text-align: center;
     transform: translateX(100%);
 	transition: transform .6s;
+	opacity: 0.95;
 }
 
 .main_navigation ul {
@@ -253,7 +253,8 @@ header {
 }
 
 .features {
-	padding: 150px 0px;
+	/*padding: 150px 0px;*/
+	margin: 60px 0px;
 }
 
 .feature, .service {
@@ -291,12 +292,13 @@ h2.feature_title, h2.service_title {
 	/*padding: 0px 50px;*/
 }
 
-p.feature_text, p.service_text {
+p.feature_text, p.service_intro {
 	font-size: 18px;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 26px;
     padding: 0px 90px;
+    /*display: none;*/
 }
 
 .works_headline {
@@ -313,7 +315,7 @@ p.feature_text, p.service_text {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 50px;
+	bottom: 50px;	
 	width: 60px;
 	height: 2px;
 	margin: auto;
@@ -333,7 +335,7 @@ p.feature_text, p.service_text {
 }
 
 .service_content {
-	margin-bottom: 150px;
+	/*margin-bottom: 150px;*/
 }
 
 .get_contact {
@@ -363,3 +365,141 @@ p.feature_text, p.service_text {
 	color: #000;
 	background: #FFF;
 }
+
+/*---test parallax----*/
+
+header > .header_wrapper {
+	height: 100%;
+	position: relative;
+	top: -40%;
+}
+
+.features_wrapper {
+	height: 200%;
+	position: relative;
+	top: -100%;
+	padding: 150px 0px;
+}
+
+#features {
+	overflow: hidden;
+}
+
+
+/*----test 3d rotation-----*/
+
+.service_icon img {
+	height: auto;
+}
+
+.services_content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.service {
+	width: 400px;
+	/*perspective: 20000px;*/
+	transform: rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+    /* transform: rotateY(90deg); */
+    transition: transform .6s;
+}
+
+.service .box {
+	/*transform: rotateY(0deg);*/
+	/*width: 400px;*/
+	height: 400px;
+	/*transform-style: preserve-3d;*/
+	position: relative;
+	transition: transform .6s;
+	
+}
+
+.service .box .service_content {
+	position: absolute;
+    top: 0px;
+    padding: 20px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+    z-index: 100;
+    /* align-content: space-around; */
+    justify-content: center;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+/*	-webkit-transform: translateZ(200px);
+	transform: translateZ(200px);*/
+	background-color: #FFF;
+}
+
+.service .box .service_text {
+	position: absolute;
+	padding: 20px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	position: absolute;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    /* transform: translateX(-200px); */
+    /* transform: rotateY(-90deg); */
+    /* background-color: #000; */
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+    z-index: 10;
+    visibility: 0;
+    /*visibility: hidden;*/
+	/*width: 100%;
+	height: 100%;*/
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+	/*-webkit-transform: rotateY(-90deg) translateZ(252px);
+	transform: rotateY(-90deg) translateZ(252px);*/
+	/*transform: translateX(-200px);*/
+	/*transform: rotateY(-90deg);*/
+	transition: transform 1s;
+	background-color: #000;
+	color: white;
+}
+
+
+
+.service .box .service_text {
+	
+}
+
+.service .box:hover  {
+	/*transform: rotateY(90deg);*/
+}
+
+.service:hover {
+	transform: rotateY(90deg);
+}
+
+.service:hover .service_text {
+	/*visibility: visible;*/
+}
+
+/*.service .box:hover .service_text {
+	transform: rotateY(0deg) translateX(0px);
+}*/

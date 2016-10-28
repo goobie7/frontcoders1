@@ -218,7 +218,7 @@ header {
 }
 
 .intro_jumbotron {
-	background: url('../images/intro_home.jpg');
+	background: url('../images/intro_home_no0.jpg');
 	background-size: cover;
 	background-position: center;
 	position: absolute;
@@ -351,7 +351,7 @@ p.feature_text, p.service_intro {
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 50px;	
+	bottom: 50px;
 	width: 60px;
 	height: 2px;
 	margin: auto;
@@ -442,7 +442,7 @@ header > .header_wrapper {
 	position: relative;
 	transition: transform .6s;
 	transform-style: preserve-3d;
-	
+
 }
 
 .service .box .service_content {
@@ -515,7 +515,7 @@ header > .header_wrapper {
 
 
 .service .box .service_text {
-	
+
 }
 
 .service:hover {

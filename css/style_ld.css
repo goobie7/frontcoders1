@@ -313,6 +313,7 @@ h2.feature_title, h2.service_title {
     font-weight: 400;
     margin-bottom: 25px;
     text-transform: uppercase;
+    color: #404040;
 }
 
 .feature_content {

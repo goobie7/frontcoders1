@@ -139,18 +139,22 @@ header {
 .btn_toggle_menu:hover .main_menu_icon path,
 .btn_toggle_menu:hover span,
 .btn_toggle_menu:hover small {
-	border-color: #FFF;
-	fill: #FFF;
-	color: #FFF;
+	border-color: #22A7F0;
+	fill: #22A7F0;
+	color: #22A7F0;
 	transition: all .5s
 }
 
 .btn_toggle_menu span {
 	line-height: 30px;
     padding: 5px 15px;
-    border: 2px solid #4ea1d3;
+    /*border: 2px solid #4ea1d3;*/
+    /*border: 2px solid #22A7F0;*/
+    border: 2px solid #FFF;
     display: inline-block;
-    color: #4ea1d3;
+    /*color: #4ea1d3;*/
+    /*color: #22A7F0;*/
+    color: #FFF;
     letter-spacing: 2px;
     transition: border .5s;
 }
@@ -170,7 +174,9 @@ header {
 }
 
 .main_menu_icon path {
-	fill: #4ea1d3;
+	/*fill: #4ea1d3;*/
+	/*fill: #22A7F0;*/
+	fill: #FFF;
 	transition: fill .5s;
 }
 
@@ -218,7 +224,7 @@ header {
 }
 
 .intro_jumbotron {
-	background: url('../images/intro_home_no0.jpg');
+	background: url('../images/intro_home_no2.jpg');
 	background-size: cover;
 	background-position: center;
 	position: absolute;
@@ -508,7 +514,7 @@ header > .header_wrapper {
 	/*transform: translateX(-200px);*/
 	/*transform: rotateY(-90deg);*/
 	transition: transform 1s;
-	background-color: #000;
+	background-color: #22A7F0;
 	color: white;
 }
 

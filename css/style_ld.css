@@ -12,7 +12,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	position: relative;
 	width: 100%;
-	background-color: rgb(253, 253, 253);
+	background-color: rgb(249, 249, 249);
 }
 
 button {
@@ -119,11 +119,14 @@ header {
 
 .main_brand_logo {
 	position: absolute;
-	top: 50px;
+	top: 58px;
 	left: 8%;
 	z-index: 1000;
+	width: 200px;
+	height: 24px;
 	color: #FFF;
 	text-indent: -99999px;
+	background: url("../images/logo_white.png");
 }
 
 .btn_toggle_menu {
@@ -289,7 +292,7 @@ header {
 	position: absolute;
 	bottom: -80px;
 	/*width: 40%;*/
-	background: #4ea1d3;
+	background: #22A7F0;
 	height: 2px;
 	margin: auto;
 	left: 50%;
@@ -310,11 +313,12 @@ header {
 }
 
 h2.feature_title, h2.service_title {
-	font-size: 22px;
-    font-weight: 400;
+	font-size: 18px;
+    font-weight: 700;
     margin-bottom: 25px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: #404040;
+    color: #303030;
 }
 
 .feature_content {
@@ -365,7 +369,7 @@ p.feature_text, p.service_intro {
 	margin: auto;
 	right: 0;
 	left: 0;
-	background: #4ea1d3;
+	background: #22A7F0;
 }
 
 .service_content {
@@ -417,10 +421,15 @@ header > .header_wrapper {
 
 #features {
 	overflow: hidden;
+	background-color: rgb(249, 249, 249);
 }
 
 
 /*----test 3d rotation-----*/
+
+.service_icon {
+	margin-bottom: 30px;
+}
 
 .service_icon img {
 	height: auto;
@@ -476,7 +485,7 @@ header > .header_wrapper {
 	align-items: center;*/
 /*	-webkit-transform: translateZ(200px);
 	transform: translateZ(200px);*/
-	background-color: #FFF;
+	background-color: rgb(249, 249, 249);
 }
 
 .service .box .service_text {

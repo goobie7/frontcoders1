@@ -123,10 +123,10 @@ header {
 	left: 8%;
 	z-index: 1000;
 	width: 200px;
-	height: 24px;
+	height: 27px;
 	color: #FFF;
 	text-indent: -99999px;
-	background: url("../images/logo_white.png");
+	background: url("../images/logo_white_shadow.png");
 }
 
 .btn_toggle_menu {

@@ -342,13 +342,24 @@ p.feature_text, p.service_intro {
 
 .works_headline {
 	padding: 70px 0px;
-	font-size: 60px;
+	/*font-size: 60px;*/
 	font-weight: 800;
 	letter-spacing: 1.5px;
 	text-align: left;
 	position: relative;
 	margin-left: 40px;
+	color: #333;
+	font-size: 25px;
+	line-height: 45px;
 	font-family: 'Poppins', sans-serif;
+}
+
+.works_headline span {
+	display: block;
+    font-size: 55px;
+    letter-spacing: 6px;
+    color: rgb(34,219,240);
+    font-weight: 700;
 }
 
 .work_content figure {
@@ -384,17 +395,27 @@ p.feature_text, p.service_intro {
 	padding: 70px 0px;
 	/*background: #f6f6f6;*/
 	margin-left: 40px;
-	font-size: 60px;
-	font-weight: 800;
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: 700;
 	letter-spacing: 1.5px;
 	text-align: left;
 	position: relative;
+	color: #333;
 	font-family: 'Poppins', sans-serif;
+}
+
+.services_headline span {
+	display: block;
+    font-size: 55px;
+    letter-spacing: 6px;
+    color: rgb(34,219,240);
+    font-weight: 700;
 }
 
 .services_headline:after,
 .works_headline:after {
-	content: '';
+	/*content: '';*/
 	display: block;
 	position: absolute;
 	bottom: 50px;

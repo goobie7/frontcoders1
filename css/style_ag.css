@@ -2,11 +2,12 @@ body { font-family: "Lato", sans-serif; font-size: 14px;}
 p { margin: 10px 0px; line-height: 1.7;}
 
 .bg_pink { background-color: pink; }
-.bg_mint { background-color: rgb(168, 231, 142); }
-.bg_blue { background-color: rgb(88, 195, 209) }
+.bg_mint { background-color: #22dbf0; }
+.bg_blue { background-color: #2396f1; }
 .img_responsive { width: 100%; }
 .text_center { text-align: center; }
-.people { padding: 70px 150px; }
+.people { padding: 150px 150px; background-color:; }
+.people img { margin: 100px auto; }
 .people_description { padding: 100px 20px; }
 .people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; }
 .people p { padding: 15px 270px; text-align: justify; background-color:;}
@@ -21,7 +22,7 @@ p { margin: 10px 0px; line-height: 1.7;}
 	right: 0px;
 	width: 70px;
 	height: 3px;
-	background-color: pink;
+	background-color: rgba(252, 252, 252, 0.3);
 	margin: auto;
 }
 .people_button {

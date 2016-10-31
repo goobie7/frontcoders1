@@ -320,6 +320,7 @@ h2.feature_title, h2.service_title {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgb(47, 49, 47);
+    color: rgb(70,70,70);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -381,6 +382,7 @@ h2.section_headline {
 	text-align: left;
 	position: relative;
 	color: #353535;
+	color: rgb(70,70,70);
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -415,7 +417,7 @@ h2.section_headline:after {
 	display: block;
 	width: 220px;
 	padding: 18px 30px;
-	background: #000;
+	background: rgb(40,40,40);
 	border: none;
 	margin: 70px auto;
 	cursor: pointer;
@@ -423,7 +425,7 @@ h2.section_headline:after {
 	line-height: 1.7;
 	text-transform: uppercase;
 	transition: all .5s;
-	border: 2px solid #000;
+	border: 2px solid rgb(40,40,40);
 	border-radius: 4px;
 }
 

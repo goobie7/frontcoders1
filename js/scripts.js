@@ -37,3 +37,35 @@
 
 
 })();
+
+
+
+
+
+
+
+
+
+// ### Funny Facts Launcher
+// using waypoints
+$("#funny_facts").waypoint(function(){
+
+	// Counting jQ script
+	$('.counting').each(function() {
+
+	  var $this = $(this);
+	  var startNum = $this.text();
+	  var countTo = $this.attr('count-target');
+
+	  $({ countNum: startNum }).animate({ countNum: countTo },
+	    {
+	      duration: 10000,
+	      easing:'swing',
+	      step: function() { $this.text(Math.floor(this.countNum)); },
+	      complete: function() { $this.text(this.countNum ); }
+	    }
+	  );
+	});
+	this.destroy();
+
+}, {offset : '60%', triggerOnce: false});

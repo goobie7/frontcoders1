@@ -12,7 +12,7 @@ p { margin: 10px 0px; line-height: 1.7;}
 .people { padding: 150px 150px; background-color:; }
 .people img { margin: 100px auto; }
 .people_description { padding: 100px 20px; }
-.people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; }
+.people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; color: rgb(30,30,30); }
 .people p { padding: 15px 270px; text-align: justify; background-color:;}
 .people p { max-width: 300px; margin: 0 auto; padding: 25px 0px; text-align: justify; background-color:;}
 .people h2 { position: relative; padding-bottom: 5px; margin-bottom: 20px;}
@@ -43,6 +43,8 @@ p { margin: 10px 0px; line-height: 1.7;}
 	background-position: center;
 	/*background-image: url("../images/keyb1.jpg");*/
 }
+
+#funny_facts .feature_text { font-size: 15px; font-weight: 400;}
 
 h2.funny_number {
 		font-size: 27px;

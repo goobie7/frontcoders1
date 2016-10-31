@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px) {
+  .service {
+    width: 250px;
+  }
+
+  .service .box {
+    height: 250px;
+  }
+
+  .container {
+    width: 850px;
+  }
+
+}

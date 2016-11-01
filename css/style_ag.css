@@ -9,6 +9,40 @@ p { margin: 10px 0px; line-height: 1.7;}
 .bg_white { background-color: rgb(252, 252, 252); }
 .img_responsive { width: 100%; }
 .text_center { text-align: center; }
+
+h2.section_headline {
+	padding: 140px 0px 70px 0px;
+	/*background: #f6f6f6;*/
+	margin-left: 25px;
+	font-size: 43px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	text-align: left;
+	position: relative;
+	color: #353535;
+	color: rgb(70,70,70);
+	font-family: 'Poppins', sans-serif;
+}
+
+h2.section_headline span { color: #22b9f0; }
+
+h2.section_headline:after {
+	/*content: '';*/
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	width: 60px;
+	height: 2px;
+	/*margin: auto;*/
+	right: 0;
+	left: 0;
+	background: rgb(34,201,240);
+}
+
+
+
+
+
 .people { padding: 150px 150px; background-color:; }
 .people img { margin: 100px auto; }
 .people_description { padding: 100px 20px; }
@@ -37,6 +71,37 @@ p { margin: 10px 0px; line-height: 1.7;}
 	width: 70px;
 }
 
+
+.get_contact {
+	background: #f6f6f6;
+}
+
+.get_contact-content {
+	padding: 150px 0px;
+}
+
+.get_contact-btn {
+	line-height: 1.7;
+	display: block;
+	width: 220px;
+	padding: 18px 30px;
+	background: rgb(40,40,40);
+	border: none;
+	margin: auto;
+	cursor: pointer;
+	color: #FAFAFA;
+	text-transform: uppercase;
+	transition: all .5s;
+	border: 2px solid rgb(40,40,40);
+	border-radius: 4px;
+}
+
+.get_contact-btn:hover {
+	/*border: 2px solid #000;*/
+	color: #000;
+	background: #FFF;
+}
+
 #funny_facts {
 	background: url("../images/keyb1.jpg");
 	background-size: cover;
@@ -44,7 +109,7 @@ p { margin: 10px 0px; line-height: 1.7;}
 	/*background-image: url("../images/keyb1.jpg");*/
 }
 
-#funny_facts .feature_text { font-size: 15px; font-weight: 400;}
+#funny_facts .feature_text { font-size: 14px; font-weight: 400;}
 
 h2.funny_number {
 		font-size: 27px;
@@ -54,4 +119,14 @@ h2.funny_number {
     text-transform: uppercase;
     color: rgb(70,70,70);
     font-family: 'Poppins', sans-serif;
+}
+
+
+.feature_icon svg {
+	color: pink;
+	width: 45px;
+	height: 45px;
+	font-size: 100px;
+	fill: #22b9f0;
+	vertical-align: bottom;
 }

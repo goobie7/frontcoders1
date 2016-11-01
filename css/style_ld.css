@@ -340,28 +340,6 @@ p.feature_text, p.service_intro {
     /*display: none;*/
 }
 
-.works_headline {
-	padding: 70px 0px;
-	/*font-size: 60px;*/
-	font-weight: 800;
-	letter-spacing: 1.5px;
-	text-align: left;
-	position: relative;
-	margin-left: 40px;
-	color: #333;
-	font-size: 25px;
-	line-height: 45px;
-	font-family: 'Poppins', sans-serif;
-}
-
-.works_headline span {
-	display: block;
-    font-size: 55px;
-    letter-spacing: 6px;
-    color: rgb(34,219,240);
-    font-weight: 700;
-}
-
 .work_content figure {
 	width: 100%;
 	position: relative;
@@ -431,33 +409,7 @@ p.feature_text, p.service_intro {
 	/*margin-bottom: 150px;*/
 }
 
-.get_contact {
-	background: #f6f6f6;
-}
 
-.get_contact-content {
-	padding: 70px 0px;
-}
-
-.get_contact-btn {
-	display: block;
-	width: 220px;
-	padding: 18px 30px;
-	background: #000;
-	border: none;
-	margin: auto;
-	cursor: pointer;
-	color: #FFF;
-	text-transform: uppercase;
-	transition: all .5s;
-	border: 2px solid #000;
-}
-
-.get_contact-btn:hover {
-	/*border: 2px solid #000;*/
-	color: #000;
-	background: #FFF;
-}
 
 /*---test parallax----*/
 
@@ -516,6 +468,7 @@ header > .header_wrapper {
 
 .services_content.one .service:first-child .service_content {
 	background: rgb(34,219,240);
+	background: rgb(34,184,240);
 }
 
 .services_content.one .service:nth-child(2) .service_content {
@@ -524,6 +477,7 @@ header > .header_wrapper {
 
 .services_content.one .service:nth-child(3) .service_content {
 	background: rgb(34,184,240);
+	background: rgb(34,219,240);
 }
 
 .services_content.two .service:nth-child(1) .service_content {

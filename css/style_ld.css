@@ -120,6 +120,7 @@ input, textarea {
 .text_typed {
 	margin-left: 15px;
 	color: rgb(34,201,240);
+	display: inline;	
 }
 
 .typed-cursor {
@@ -260,7 +261,7 @@ header {
 	height: 100vh;
 	width: 100%;
 	text-align: center;
-	padding-left: 200px;
+	/*padding-left: 200px;*/
 }
 
 .intro_jumbotron .text_content {
@@ -657,9 +658,8 @@ header > .header_wrapper {
 	max-width: 100%;
 }
 
-
 .contact {
-	background: rgb(70,70,70);
+	background: rgb(40,40,40);
 }
 
 .contact-user {
@@ -675,17 +675,18 @@ header > .header_wrapper {
 .form_wrapper h3,
 .contact-details h3 {
 	color: rgb(70,70,70);
-	font-size: 30px;
+	font-size: 28px;
 	padding: 50px;
 	font-family: 'Poppins', sans-serif;
 }
 
 .contact-details h3 {
 	color: rgb(252, 252, 252);
+	font-size: 26px;
 }
 
 .contact-user p {
-	font-size: 20px;
+	font-size: 18px;
 	cursor: default;
 	transition: all 5s;
 }
@@ -744,11 +745,20 @@ textarea[name=contact-message] {
 button[type=submit] {
 	background: rgb(40,40,40);
 	padding: 10px 25px;
+	letter-spacing: 1.5px;
 	position: relative;
 	float: right;
 	color: rgb(250, 250, 250);
 	cursor: pointer;
 	font-family: 'Poppins', sans-serif;
+	margin-bottom: 30px;
+	transition: all .5s;
+	border: 2px solid rgb(40,40,40);
+}
+
+button[type=submit]:hover {
+	background: transparent;
+	color: rgb(40,40,40);
 }
 
 .copy-rights {

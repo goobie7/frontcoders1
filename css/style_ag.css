@@ -115,7 +115,7 @@ h2.section_headline:after {
 	text-transform: uppercase;
 	transition: all .5s;
 	border: 2px solid rgb(40,40,40);
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 }
 
 .get_contact-btn:hover {

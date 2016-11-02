@@ -24,8 +24,8 @@
 								"nowoczesne strony www",
 								"projekty graficzne",
 								"szablony Wordpress",
-								"fotografie",
-								"dobry klimat <br> współpracy ;)"
+								"fotografie...",
+								"dobry klimat współpracy ;)"
 							],
 	            typeSpeed: 100,
 	            loop: true,

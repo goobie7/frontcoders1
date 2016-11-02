@@ -118,9 +118,10 @@ input, textarea {
 }
 
 .text_typed {
-	margin-left: 15px;
+	margin-left: 80px;
+	font-size: 90px;
 	color: rgb(34,201,240);
-	display: inline;	
+	display: inline;
 }
 
 .typed-cursor {
@@ -268,7 +269,7 @@ header {
 	font-size: 70px;
 	display: table-cell;
 	vertical-align: middle;
-	padding: 100px;
+	padding: 155px;
 	text-align: left;
 	color: #FFF;
 	font-weight: 800;
@@ -711,7 +712,7 @@ form {
 	margin: 50px;
 }
 
-input[name=contact-name], 
+input[name=contact-name],
 input[name="contact-email"],
 input[name="contact-phone"] {
 	font-family: 'Poppins', sans-serif;

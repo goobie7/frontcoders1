@@ -45,7 +45,7 @@ h2.section_headline:after {
 
 .people { padding: 150px 150px; background-color:; }
 .people img { margin: 100px auto; }
-.people_description { padding: 100px 20px; }
+.people_description { padding: 100px 20px; min-height: 700px;}
 .people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; color: rgb(30,30,30); }
 .people p { padding: 15px 270px; text-align: justify; background-color:;}
 .people p { max-width: 300px; margin: 0 auto; padding: 25px 0px; text-align: justify; background-color:;}
@@ -77,9 +77,31 @@ h2.section_headline:after {
 }
 
 .get_contact-content {
-	padding: 150px 0px;
+	padding: 150px 20px 120px 20px;
+	background-color: rgb(252, 252, 252);
 }
 
+
+#get_contact h2,
+#get_contact h3  {
+	text-align: center;
+	margin: 15px 0px;
+}
+
+#get_contact h2 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgba(35,150,241,0.5)
+}
+
+#get_contact h3 {
+	color: rgb(180,180,180);
+	font-size: 27px;
+	font-weight: 700;
+
+}
 .get_contact-btn {
 	line-height: 1.7;
 	display: block;
@@ -87,7 +109,7 @@ h2.section_headline:after {
 	padding: 18px 30px;
 	background: rgb(40,40,40);
 	border: none;
-	margin: auto;
+	margin: 50px auto;
 	cursor: pointer;
 	color: #FAFAFA;
 	text-transform: uppercase;

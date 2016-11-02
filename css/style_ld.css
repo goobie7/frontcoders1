@@ -33,6 +33,22 @@ img {
 	margin: auto;
 }
 
+input {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+
+input, textarea {
+	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+    outline: none;
+}
+
 .clearfix:before,
 .clearfix:after {
 	content: " ";
@@ -631,4 +647,114 @@ header > .header_wrapper {
 .no-preserve3d .service .box .service_content {
 	-webkit-transform: translate3d(0, 0, 200px);
     transform-style: flat;
+}
+
+
+/*----Contact form styles & footer stylesz----*/
+
+.contact > .container {
+	/*padding: 0px 15px;*/
+	max-width: 100%;
+}
+
+
+.contact {
+	background: rgb(70,70,70);
+}
+
+.contact-user {
+	text-align: center;
+	/*background: rgb(252, 252, 252);*/
+}
+
+.form_wrapper {
+	background: rgb(252, 252, 252);
+	font-family: 'Poppins', sans-serif;
+}
+
+.form_wrapper h3,
+.contact-details h3 {
+	color: rgb(70,70,70);
+	font-size: 30px;
+	padding: 50px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-details h3 {
+	color: rgb(252, 252, 252);
+}
+
+.contact-user p {
+	font-size: 20px;
+	cursor: default;
+	transition: all 5s;
+}
+
+.contact-user .phone,
+.contact-user .email {
+	display: block;
+	transition: all 5s;
+}
+
+.contact-user p:hover .phone,
+.contact-user p:hover .email {
+	text-decoration: underline;
+}
+
+.contact-user p, .contact-user span {
+	font-family: 'Poppins', sans-serif;
+	color: rgb(252, 252, 252);
+}
+
+form {
+	margin: 50px;
+}
+
+input[name=contact-name], 
+input[name="contact-email"],
+input[name="contact-phone"] {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+    display: block;
+    outline: none;
+    color: rgb(40,40,40);
+    border-bottom: 1px solid rgb(40,40,40);
+    line-height: 25px;
+    font-size: 18px;
+    padding-bottom: 25px;
+    background-color: transparent;
+}
+
+textarea[name=contact-message] {
+	font-family: 'Poppins', sans-serif;
+	resize: none;
+	height: 250px;
+	width: 100%;
+    border: none;
+    /*margin-top: 40px;*/
+    color: rgb(40,40,40);
+    border-bottom: 1px solid rgb(40,40,40);
+    padding-bottom: 25px;
+    line-height: 30px;
+    background-color: transparent;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+button[type=submit] {
+	background: rgb(40,40,40);
+	padding: 10px 25px;
+	position: relative;
+	float: right;
+	color: rgb(250, 250, 250);
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+}
+
+.copy-rights {
+	padding: 30px 0px;
+}
+
+.copy-rights span {
+	float: right;
 }

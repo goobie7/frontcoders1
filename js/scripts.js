@@ -1,64 +1,58 @@
 window.onload = init;
 
-function init() {
+	function init() {
 
-// ###### Our Works TOGGLE
-	var section = document.getElementById('our_works');
-	var items = section.querySelectorAll('.works_tile');
+	// ###### Our Works TOGGLE
+		var section = document.getElementById('our_works');
+		var items = section.querySelectorAll('.works_tile');
 
-		for(a=0; a<items.length; a++) {
+		function toggleClass(elem) {
+			var target = elem.querySelector('.works_description');
+			console.log(target);
+			target.classList.toggle('hide_this');
+		}
 
-			function toggle() {
-					var target = this.querySelector('.works_description');
-					target.classList.toggle('hide_this');
-			}
-
-			items[a].addEventListener('mouseenter', toggle );
-			items[a].addEventListener('mouseleave', toggle );
-			console.log(items[a]);
+		for(i=0; i <items.length; i++) {
+			items[i].addEventListener('mouseenter', toggleClass.bind(this, items[i]));
+			items[i].addEventListener('mouseleave', toggleClass.bind(this, items[i]));
+		}
 	}
-}
 
+	(function(){
 
-(function(){
+		$(document).ready(function() {
+			var $body = $('body'),
+				$mainNav = $('.main_navigation'),
+				$navOpenBtn = $('.btn_toggle_menu'),
+				$navCloseBtn = $('.main_navigation-close-btn');
 
+			$navOpenBtn.on('click', function() {
+				$body.addClass('nav-visible');
+			});
 
-	$(document).ready(function() {
-		var $body = $('body'),
-			$mainNav = $('.main_navigation'),
-			$navOpenBtn = $('.btn_toggle_menu'),
-			$navCloseBtn = $('.main_navigation-close-btn');
+			$navCloseBtn.on('click', function(){
+				$body.removeClass('nav-visible');
+			});
 
-		$navOpenBtn.on('click', function() {
-			$body.addClass('nav-visible');
+			// Script resposible for typing effect on site
+
+			$(function(){
+		        $(".text_typed").typed({
+		            strings: [
+									"nowoczesne strony www",
+									"projekty graficzne",
+									"szablony Wordpress",
+									"fotografie...",
+									"dobry klimat współpracy ;)"
+								],
+		            typeSpeed: 100,
+		            loop: true,
+		            startDelay: 1000,
+		        });
+	    	});
+
 		});
-
-		$navCloseBtn.on('click', function(){
-			$body.removeClass('nav-visible');
-		});
-
-
-		// Script resposible for typing effect on site
-
-		$(function(){
-	        $(".text_typed").typed({
-	            strings: [
-								"nowoczesne strony www",
-								"projekty graficzne",
-								"szablony Wordpress",
-								"fotografie...",
-								"dobry klimat współpracy ;)"
-							],
-	            typeSpeed: 100,
-	            loop: true,
-	            startDelay: 1000,
-	        });
-    	});
-
-	});
-
-
-})();
+	})();
 
 
 

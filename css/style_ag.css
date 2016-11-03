@@ -192,6 +192,8 @@ h2.funny_number {
 
 .works_description p {
 	color: rgba(250,250,250,1);
+	font-size: 16px;
+	font-weight: 200;
 }
 
 .works_description svg {

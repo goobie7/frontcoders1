@@ -138,14 +138,14 @@ header {
 
 .main_brand_logo {
 	position: absolute;
-	top: 58px;
+	top: 30px;
 	left: 8%;
 	z-index: 1000;
-	width: 200px;
-	height: 27px;
+	width: 220px;
+	height: 88px;
 	color: #FFF;
 	text-indent: -99999px;
-	background: url("../images/logo_white_shadow.png");
+	background: url("../images/ecoderslogo220.png");
 }
 
 .btn_toggle_menu {

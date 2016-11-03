@@ -74,19 +74,19 @@
     }
 
     .service {
-    	width: 250px;
+    	width: 300px;
     }
 
     .service .box {
-    	height: 250px;
+    	height: 300px;
     }
 
     .service .box .service_content {
-    	transform: translateZ(125px);
+    	transform: translateZ(150px);
     }
 
     .service .box .service_text {
-    	transform: rotateY(-90deg) translateZ(125px);
+    	transform: rotateY(-90deg) translateZ(150px);
     }
 }
 

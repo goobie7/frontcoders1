@@ -1,4 +1,3 @@
-window.onload = init;
 	function init() {
 
 		function toggleClass(elem) {
@@ -19,21 +18,21 @@ window.onload = init;
 
 (function(){
 
-
-	$(document).ready(function() {
-		var $body = $('body'),
-			$mainNav = $('.main_navigation'),
-			$navOpenBtn = $('.btn_toggle_menu'),
-			$navCloseBtn = $('.main_navigation-close-btn');
-
-
-	(function(){
-
 		$(document).ready(function() {
 			var $body = $('body'),
 				$mainNav = $('.main_navigation'),
 				$navOpenBtn = $('.btn_toggle_menu'),
 				$navCloseBtn = $('.main_navigation-close-btn');
+
+
+			$mainNav.find('li a').on('click', function(e){
+
+				e.preventDefault();
+				var target = $($(this).attr('href'));
+				$('html, body').animate({
+					scrollTop : target.offset().top + 200
+				}, 1000);
+			});
 
 			$navOpenBtn.on('click', function() {
 				$body.addClass('nav-visible');
@@ -45,23 +44,26 @@ window.onload = init;
 
 			// Script resposible for typing effect on site
 
-			$(function(){
-		        $(".text_typed").typed({
-		            strings: [
-									"nowoczesne strony www",
-									"projekty graficzne",
-									"szablony Wordpress",
-									"fotografie...",
-									"dobry klimat współpracy ;)"
-								],
-		            typeSpeed: 100,
-		            loop: true,
-		            startDelay: 1000,
-		        });
-	    	});
-
+			
+	        $(".text_typed").typed({
+	            strings: [
+							"nowoczesne strony www",
+							"projekty graficzne",
+							"szablony Wordpress",
+							"fotografie...",
+							"dobry klimat współpracy ;)"
+							],
+	            typeSpeed: 100,
+	            loop: true,
+	            startDelay: 1000,
+	        });
 		});
 	})();
+
+
+	
+
+
 
 // ###### Funny Facts Launcher
 // using waypoints
@@ -84,5 +86,4 @@ $("#funny_facts").waypoint(function(){
 	  );
 	});
 	this.destroy();
-
 }, {offset : '60%', triggerOnce: false});

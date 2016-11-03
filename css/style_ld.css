@@ -232,6 +232,11 @@ header {
     letter-spacing: 2px;
 }
 
+.main_navigation ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 .main_navigation-close-btn {
 	display: block;
 	position: absolute;

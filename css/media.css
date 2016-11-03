@@ -45,9 +45,20 @@
     	width: 100vw;
     }
 
+    .feature.box {
+        margin-bottom: 70px;
+    }
 
-.people_description p { font-size: 14px;}
-.text_typed { font-size: 30px; margin-left: 0px;}
+    .feature.box:last-child {
+        margin-bottom: 0px;
+    }
+
+    .people_description p { font-size: 14px;}
+    .text_typed { font-size: 30px; margin-left: 0px;}
+
+    .peoples h2.section_headline {
+        padding: 40px 0px;
+    }
 
 }
 
@@ -69,8 +80,24 @@
         border: none;
     }
 
+    button[type=submit] {
+        margin-top: 40px;
+    }
+    
     .btn_toggle_menu small {
         display: none;
+    }
+
+    .peoples h2.section_headline {
+        padding: 10px 0px 10px 0px
+    }
+
+    .main_brand_logo {
+        left: 2%;
+    }
+
+    .btn_toggle_menu {
+        top: 56px;
     }
 
     .service {

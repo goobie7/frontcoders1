@@ -202,3 +202,17 @@ h2.funny_number {
 	right: 30px;
 	bottom: 25px;
 }
+
+
+.send_info_message {
+	display: block;
+	float: left;
+	background:;
+	margin: 0;
+	padding: 0;
+	min-width: 250px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-weight: 200;
+	color: #22b9f0;
+}

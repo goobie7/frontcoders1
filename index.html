@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>FrontCoders - programming company</title>
+		<title>eCoders | Tworzymy nowoczesne i responsywne strony internetowe</title>
 		<link rel="stylesheet" type="text/css" href="css/style_ld.css">
 		<link rel="stylesheet" type="text/css" href="css/style_ag.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
@@ -94,60 +94,6 @@
 			</div>
 		</section>
 
-
-<!--
-		<section id="works" class="works">
-			<div class="row">
-				<div class="container">
-					<h2 class="section_headline"><span>Wybrane </span>prace</h2>
-				</div>
-				<div class="col-4 col-s-12 no_padding">
-					<div class="work_content">
-						<figure>
-							<img src="images/ondesktop2_flight.jpg" alt="" />
-							<figcaption>
-								<div class="work_intro">
-									<div class="work-inner">
-										<h4>flightschool.pl</h4>
-									</div>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div class="col-4 col-s-12 no_padding">
-					<div class="work_content">
-						<figure>
-							<img src="images/ondesktop1_globetech.jpg" alt="" />
-							<figcaption>
-								<div class="work_intro">
-									<div class="work-inner">
-										<h4>globe-tech.pl</h4>
-									</div>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div class="col-4 col-s-12 no_padding">
-					<div class="work_content">
-						<figure>
-							<img src="images/ondesktop2_agu.jpg" alt="" />
-							<figcaption>
-								<div class="work_intro">
-									<div class="work-inner">
-										<h4>gubanski.art.pl</h4>
-									</div>
-								</div>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-
-
 		<section id="our_works" class="our_works">
 			<div class="container">
 				<h2 class="section_headline"><span>Wybrane </span>projekty</h2>
@@ -163,7 +109,7 @@
 						</div>
 					</div>
 					<div class="works_tile col-4 col-m-6 col-s-12 no_padding">
-						<img src="images/ondesktop1_globetech.jpg.">
+						<img src="images/ondesktop1_globetech.jpg">
 						<div class="works_description hide_this">
 							<h3>globe-tech.pl</h3>
 							<p>Precyzyjne projekty i prace w metalu</p>
@@ -179,16 +125,7 @@
 						</div>
 					</div>
 				</div>
-
 		</section>
-
-
-
-
-
-
-
-
 
 		<section id="services" class="services">
 			<!-- <div class="row"> -->
@@ -385,7 +322,8 @@
 						<div class="col-6 col-s-12 no_padding form_wrapper">
 							<h3>Napisz do nas!</h3>
 							<div>
-								<form>
+								<div class="form-style" id="contact_form">
+								<!-- <form id="contact_form"> -->
 									<div class="row">
 										<div class="col-12">
 											<input type="text" name="contact-name" placeholder="Imię">
@@ -406,8 +344,9 @@
 											<textarea type="text" name="contact-message" placeholder="Wiadomość"></textarea>
 										</div>
 									</div>
-									<button type="submit">Wyślij</button>
-								</form>
+									<div id="contact_results" class="send_info_message"><p>...</p></div>
+									<button type="submit" id="submit_btn">Wyślij</button>
+								<!-- </form> -->
 							</div>
 						</div>
 					</div>
@@ -487,6 +426,7 @@
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/sendmsg.js"></script>
 	<script type="text/javascript">
 		var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 

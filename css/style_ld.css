@@ -713,7 +713,8 @@ header > .header_wrapper {
 	color: rgb(252, 252, 252);
 }
 
-form {
+
+#contact_form {
 	margin: 50px;
 }
 

@@ -1,3 +1,25 @@
+window.onload = init;
+
+function init() {
+
+// ###### Our Works TOGGLE
+	var section = document.getElementById('our_works');
+	var items = section.querySelectorAll('.works_tile');
+
+		for(a=0; a<items.length; a++) {
+
+			function toggle() {
+					var target = this.querySelector('.works_description');
+					target.classList.toggle('hide_this');
+			}
+
+			items[a].addEventListener('mouseenter', toggle );
+			items[a].addEventListener('mouseleave', toggle );
+			console.log(items[a]);
+	}
+}
+
+
 (function(){
 
 
@@ -46,7 +68,7 @@
 
 
 
-// ### Funny Facts Launcher
+// ###### Funny Facts Launcher
 // using waypoints
 $("#funny_facts").waypoint(function(){
 

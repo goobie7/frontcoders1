@@ -152,3 +152,40 @@ h2.funny_number {
 	fill: #22b9f0;
 	vertical-align: bottom;
 }
+
+.works_tile { position: relative; }
+
+.works_description {
+
+	top:0px;
+	left:0px;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	z-index: 10;
+	padding: 40px 100px 40px 20px;
+	background-color: rgba(10,10,10,0.8);
+	background-color: rgba(34, 167, 240, 0.9);
+}
+
+.hide_this {
+	display: none;
+}
+
+.works_description h3 {
+	font-family: "lato", serif;
+	font-size: 36px;
+	font-weight: 200;
+	color: rgba(250,250,250,1);
+}
+
+.works_description p {
+	color: rgba(250,250,250,1);
+}
+
+.works_description svg {
+	fill: white;
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+}

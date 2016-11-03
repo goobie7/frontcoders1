@@ -16,6 +16,8 @@
 	.service {
 		order: 1;
 	}
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -44,6 +46,10 @@
     .main_navigation {
     	width: 100vw;
     }
+
+
+.people_description p { font-size: 14px;}
+.text_typed { font-size: 30px; margin-left: 0px;}
 
 }
 

@@ -1,22 +1,31 @@
 window.onload = init;
-
 	function init() {
 
-	// ###### Our Works TOGGLE
-		var section = document.getElementById('our_works');
-		var items = section.querySelectorAll('.works_tile');
-
 		function toggleClass(elem) {
-			var target = elem.querySelector('.works_description');
-			console.log(target);
+			let target = elem.querySelector('.works_description');
 			target.classList.toggle('hide_this');
 		}
 
+		var section = document.getElementById('our_works');
+		var items = section.querySelectorAll('.works_tile');
+
 		for(i=0; i <items.length; i++) {
-			items[i].addEventListener('mouseenter', toggleClass.bind(this, items[i]));
-			items[i].addEventListener('mouseleave', toggleClass.bind(this, items[i]));
+			items[i].addEventListener('mouseenter', toggleClass.bind(this, items[i]) );
+			items[i].addEventListener('mouseleave', toggleClass.bind(this, items[i]) );
 		}
 	}
+
+window.onload = init;
+
+(function(){
+
+
+	$(document).ready(function() {
+		var $body = $('body'),
+			$mainNav = $('.main_navigation'),
+			$navOpenBtn = $('.btn_toggle_menu'),
+			$navCloseBtn = $('.main_navigation-close-btn');
+
 
 	(function(){
 
@@ -53,14 +62,6 @@ window.onload = init;
 
 		});
 	})();
-
-
-
-
-
-
-
-
 
 // ###### Funny Facts Launcher
 // using waypoints

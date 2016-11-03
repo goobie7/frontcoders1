@@ -2,22 +2,27 @@ window.onload = init;
 
 function init() {
 
-// ###### Our Works TOGGLE
+	function toggleClass(elem) {
+		let target = elem.querySelector('.works_description');
+		target.classList.toggle('hide_this');
+	}
+
 	var section = document.getElementById('our_works');
 	var items = section.querySelectorAll('.works_tile');
 
-		for(a=0; a<items.length; a++) {
-
-			function toggle() {
-					var target = this.querySelector('.works_description');
-					target.classList.toggle('hide_this');
-			}
-
-			items[a].addEventListener('mouseenter', toggle );
-			items[a].addEventListener('mouseleave', toggle );
-			console.log(items[a]);
+	for(i=0; i <items.length; i++) {
+		items[i].addEventListener('mouseenter', toggleClass.bind(this, items[i]) );
+		items[i].addEventListener('mouseleave', toggleClass.bind(this, items[i]) );
 	}
+
 }
+
+window.onload = init;
+
+
+
+
+
 
 
 (function(){

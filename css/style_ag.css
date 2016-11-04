@@ -26,7 +26,10 @@ h2.section_headline {
 
 h2.section_headline span { color: #22b9f0; }
 
-h2.section_headline:after {
+#peoples h2.section_headline { margin-bottom: 50px;}
+
+
+/*h2.section_headline:after {
 	/*content: '';*/
 	display: block;
 	position: absolute;
@@ -37,14 +40,14 @@ h2.section_headline:after {
 	right: 0;
 	left: 0;
 	background: rgb(34,201,240);
-}
+}*/
 
 
 
 
 
 .people { padding: 150px 150px; background-color:; }
-.people img { margin: 100px auto; }
+.people img { margin: -40px auto; }
 .people_description { padding: 100px 20px; min-height: 700px;}
 .people h1, .people h2, .people h3, .people h4, .people h5, .people h6 { margin: 5px 0px; color: rgb(30,30,30); }
 .people p { padding: 15px 270px; text-align: justify; background-color:;}

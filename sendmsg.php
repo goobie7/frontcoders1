@@ -1,10 +1,10 @@
 <?php
 if($_POST)
 {
-    $to_email = "adam.gub@gmail.com"; //Recipient email, Replace with own email here
-    $from_email = "biuro@studiosynchro.pl"; //From email address (eg: no-reply@YOUR-DOMAIN.com)
+    $to_email = "kontakt@ecoders.pl"; //Recipient email, Replace with own email here
+    $from_email = "info@ecoders.pl"; //From email address (eg: no-reply@YOUR-DOMAIN.com)
     $your_page = "eCoders.pl"; //Enter your page name or address
-    $subject = "wiadomość ze strony eCoders";
+    $subject = "wiadomość z formularza eCoders";
 
     // $send_copy = false; //default: no copy to user
 
@@ -52,13 +52,13 @@ if($_POST)
     //     die($output);
     // }
     if(strlen($message)<3){ //check emtpy message
-        $output = json_encode(array('type'=>'error', 'text' => 'W polu wiadomość napisz troszkę więcej'));
+        $output = json_encode(array('type'=>'error', 'text' => 'Wszystko pięknie, ale napisz troszkę więcej :) '));
         die($output);
     }
 
     //email body
     // $message_body = $message."\n\n".$user_name."\nEmail : ".$user_email."\nPhone Number : (".$country_code.") ". $phone_number ;
-    $message_body = $message."\r\n\r\n-----\r\n"."Wiadomość napisana przez: ".$user_name."\r\ne-mail: ".$user_email."\r\ntel.: (".$country_code.") ". $phone_number."\r\nWysłana ze strony: ".$your_page.". \r\n-----" ;
+    $message_body = $message."\r\n\r\n-----\r\n"."Wiadomość napisana przez: ".$user_name."\r\ne-mail: ".$user_email."\r\ntel.: (".$country_code.") ". $phone_number."\r\nWysłano za pomocą formularza ".$your_page."  \r\n-----" ;
 
 	### Attachment Preparation ###
 	$file_attached = false;

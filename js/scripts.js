@@ -26,7 +26,7 @@ window.onload = init;
 
 
 			$mainNav.find('li a').on('click', function(e){
-
+				$body.toggleClass('nav-visible');
 				e.preventDefault();
 				var target = $($(this).attr('href'));
 				$('html, body').animate({
@@ -57,6 +57,19 @@ window.onload = init;
 	            loop: true,
 	            startDelay: 1000,
 	        });
+
+	        function showFixedNavbar() {
+	        	var windowScroll = $(window).scrollTop();
+	        	var headerHeight = $('header').height();
+	        	if (windowScroll > headerHeight) {
+	        		console.log('hehawoidjaodawiuhdwiauhdiauwhdiawhdi');
+	        		$('.logo_btn-wrapper').addClass('fixed-position');
+	        	} else {
+	        		$('.logo_btn-wrapper').removeClass('fixed-position');
+	        	}
+	        }
+
+	        $(window).scroll(showFixedNavbar);
 		});
 	})();
 

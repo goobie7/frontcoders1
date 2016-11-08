@@ -83,7 +83,7 @@
     button[type=submit] {
         margin-top: 40px;
     }
-    
+
     .btn_toggle_menu small {
         display: none;
     }
@@ -115,7 +115,19 @@
     .service .box .service_text {
     	transform: rotateY(-90deg) translateZ(150px);
     }
-}
+
+		.service_content { position: relative; }
+		.service_content .enter_icon svg {
+			fill: rgba(255,255,255,0.5);
+			margin-top: 20px;
+			position: absolute;
+			bottom: 30px;
+			right: 40px;
+		}
+
+
+} /* END of MOBILE */
+
 
 /*@media screen and (max-width: 1000px) {
 	.service {

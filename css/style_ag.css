@@ -219,3 +219,13 @@ h2.funny_number {
 	font-weight: 200;
 	color: #22b9f0;
 }
+
+.service_content { position: relative; }
+
+.service_content .enter_icon svg {
+	fill: rgba(255,255,255,0.5);
+	margin-top: 20px;
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+}

@@ -1,4 +1,4 @@
-@media screen and ( min-width: 770px ) and ( max-width: 1199px ) {
+@media screen and ( min-width: 670px ) and ( max-width: 1000px ) {
 
 	.col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -18,7 +18,7 @@
 	}
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 669px) {
 	.col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}

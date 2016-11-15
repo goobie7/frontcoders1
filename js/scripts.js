@@ -22,15 +22,24 @@ window.onload = init;
 			var $body = $('body'),
 				$mainNav = $('.main_navigation'),
 				$navOpenBtn = $('.btn_toggle_menu'),
-				$navCloseBtn = $('.main_navigation-close-btn');
+				$navCloseBtn = $('.main_navigation-close-btn'),
+				$getContactBtn = $('.get_contact-content .contact');
 
 
 			$mainNav.find('li a').on('click', function(e){
 				$body.toggleClass('nav-visible');
-				e.preventDefault();
+				// e.preventDefault();
 				var target = $($(this).attr('href'));
 				$('html, body').animate({
-					scrollTop : target.offset().top + 200
+					scrollTop : target.offset().top + 1
+				}, 1000);
+			});
+
+			$getContactBtn.on('click', function(e) {
+				var target = $("#" + $(this).data('href'));
+
+				$('html, body').animate({
+					scrollTop : target.offset().top + 1
 				}, 1000);
 			});
 

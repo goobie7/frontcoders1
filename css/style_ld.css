@@ -219,7 +219,7 @@ header {
 	opacity: 0.95;
 }
 
-.main_navigation ul {
+.main_navigation > ul {
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -819,4 +819,15 @@ header {
 
 .hide-nav {
 	visibility: hidden;
+}
+
+.social_links {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.social_links > ul {
+	width: 100%;
 }

@@ -228,3 +228,7 @@ h2.funny_number {
 	bottom: 30px;
 	right: 40px;
 }
+
+#main_navigtion > div > ul > li > a > i {
+	color: #22A7F0;
+}

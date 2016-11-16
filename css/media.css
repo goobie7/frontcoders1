@@ -125,6 +125,23 @@
 			right: 40px;
 		}
 
+		.social_links {
+			width:30px;
+			height:50px;
+		}
+		.social_links ul {
+			width: auto;
+			height: auto;
+			position: absolute;
+			padding:0px;
+			margin:0px;
+			right:-10px;
+			bottom:10px;
+		}
+		.social_links ul li {
+			margin: auto;
+		}
+
 
 } /* END of MOBILE */
 
